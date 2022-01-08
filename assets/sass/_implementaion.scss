@@ -1,0 +1,115 @@
+.implementation {
+    padding: 100px 140px;
+    position: relative;
+
+    @media (max-width: 1600px) {
+        padding: 90px 120px;
+    }
+
+    @media (max-width: 1440px) {
+        padding: 80px 100px;
+    }
+
+    @media (max-width: 1280px) {
+        padding: 40px 85px;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 30px 65px;
+    }
+}
+
+.text-center {
+    .bordered-heading {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        top: 45px;
+
+        @media (max-width: 1440px) {
+            top: 60px;
+        }
+
+        @media (max-width: 1280px) {
+            top: 5px;
+        }
+    }
+
+    .title {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.implement-wrap {
+    margin-top: 145px;
+
+    @media (max-width: 1440px) {
+        margin-top: 70px;
+    }
+
+    @media (max-width: 1024px) {
+        margin-top: 45px;
+    }
+
+    .text-24 {
+        margin-top: 30px;
+        color: $black-25;
+        width: 90%;
+
+        @media (max-width: 1440px) {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        @media (max-width: 1280px) {
+            margin-top: 15px;
+        }
+    }
+}
+
+.img-wrap {
+    width: 90%;
+    height: 485px;
+    border: 3px solid $secondary;
+    border-radius: 281px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
+    margin-top: 72px;
+
+    @media (max-width: 1680px) {
+        height: 450px;
+        margin-bottom: 65px;
+        margin-top: 65px;
+    }
+
+    @media (max-width: 1440px) {
+        height: 350px;
+        margin-bottom: 45px;
+        margin-top: 45px;
+    }
+
+    @media (max-width: 1280px) {
+        height: 320px;
+        width: 85%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    @media (max-width: 1024px) {
+        height: 260px;
+        width: 80%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 280px;
+        border: 15px solid $dark;
+    }
+}

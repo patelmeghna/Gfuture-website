@@ -1,0 +1,14 @@
+{
+  "name": "gfuture-website",
+  "version": "1.0.0",
+  "description": "Gfuture is a product development agency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gfuture Tech Pvt. Ltd.",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

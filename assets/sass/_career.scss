@@ -1,0 +1,144 @@
+.team-form {
+    &-wrap {
+        padding: 100px 140px 120px;
+
+        @media (max-width: 1680px) {
+            padding: 90px 120px 100px;
+        }
+
+        @media (max-width: 1440px) {
+            padding: 90px 100px 90px;
+        }
+
+        @media (max-width: 1280px) {
+            padding: 45px 85px 70px;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 35px 65px 60px;
+        }
+    }
+
+    padding: 80px 75px;
+    background: $black;
+    border-radius: 30px;
+
+    @media (max-width: 1680px) {
+        padding: 70px 65px;
+    }
+
+    @media (max-width: 1280px) {
+        padding: 50px 60px;
+    }
+}
+
+.form-desc {
+    margin: 40px 0 80px;
+    color: $black-25;
+    width: 85%;
+
+    @media (max-width: 1680px) {
+        margin: 35px 0 70px;
+    }
+
+    @media (max-width: 1280px) {
+        margin: 20px 0 60px;
+    }
+}
+
+.technology {
+    padding: 50px;
+    background: $black-75;
+    border-radius: 20px;
+
+    @media (max-width: 1680px) {
+        padding: 40px;
+    }
+
+    @media (max-width: 1440px) {
+        padding: 35px;
+    }
+
+    @media (max-width: 1280px) {
+        padding: 30px;
+    }
+
+    .btn-wrap {
+        border-color: $black-50;
+        width: 130px;
+        height: 45px;
+        margin-top: 50px;
+
+        @media (max-width: 1680px) {
+            margin-top: 40px;
+        }
+
+        @media (max-width: 1440px) {
+            margin-top: 35px;
+            width: 110px;
+        }
+
+        @media (max-width: 1280px) {
+            width: 98px;
+        }
+
+        &:hover {
+            .main-btn {
+                width: 130px;
+                height: 45px;
+
+                @media (max-width: 1440px) {
+                    width: 110px;
+                }
+
+                @media (max-width: 1280px) {
+                    width: 98px;
+                }
+            }
+        }
+    }
+
+    .main-btn {
+        width: 30px;
+        height: 30px;
+        right: 6px;
+    }
+
+    .btn-circle {
+        svg {
+            @media (max-width: 1680px) {
+                right: -63%;
+            }
+        }
+    }
+}
+
+.work {
+    &-wrap {
+        width: 60%;
+        margin-top: 30px;
+
+        @media (max-width: 1680px) {
+            width: 70%;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 1440px) {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 1366px) {
+            width: 80%;
+        }
+    }
+
+    &-option {
+        color: $black-10;
+        display: flex;
+        align-items: center;
+
+        .technology-icon {
+            margin-right: 10px;
+        }
+    }
+}

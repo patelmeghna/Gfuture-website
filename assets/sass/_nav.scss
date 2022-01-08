@@ -1,0 +1,210 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 140px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+
+    @media (max-width: 1680px) {
+        padding: 25px 120px;
+    }
+
+    @media (max-width: 1440px) {
+        padding: 25px 100px;
+    }
+
+    @media (max-width: 1280px) {
+        padding: 25px 85px;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 15px 60px;
+    }
+}
+
+.hamburger_menu {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1680px) {
+        width: 82%;
+    }
+
+    @media (max-width: 1366px) {
+        width: 77%;
+    }
+
+    @media (max-width: 1024px) {
+        width: 80%;
+    }
+}
+
+.nav {
+    &-links {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                margin: 0 75px;
+                position: relative;
+
+                @media (max-width: 1366px) {
+                    margin: 0 50px;
+                }
+
+                @media (max-width: 1024px) {
+                    margin: 0 40px;
+                }
+
+                &.active {
+                    &::before {
+                        width: 6px;
+                        height: 6px;
+                        background: $secondary;
+                        border-radius: 50%;
+                        bottom: -10px;
+                        position: absolute;
+                        content: '';
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+
+                    &:hover {
+                        &::before {
+                            animation: none;
+                            background: $secondary;
+                        }
+                    }
+
+                    a {
+                        color: $secondary;
+                    }
+                }
+
+                &:hover {
+                    &::before {
+                        width: 6px;
+                        height: 6px;
+                        background: $black-10;
+                        border-radius: 50%;
+                        bottom: -10px;
+                        position: absolute;
+                        content: '';
+                        left: 50%;
+                        transform: translateX(-50%);
+                        animation: menu .5s infinite;
+                        animation-iteration-count: 1;
+                    }
+                }
+
+                a {
+                    color: $black-10;
+                }
+            }
+        }
+    }
+
+    &-btn {
+        border-top: 1px solid $black-10;
+        border-bottom: 1px solid $black-10;
+        padding: 11px 15px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 200px;
+
+        @media (max-width: 1024px) {
+            padding: 8px 15px;
+            width: 155px;
+            font-size: 12px;
+        }
+
+        .text-loop {
+            display: flex;
+            align-items: center;
+            animation: textLoop 3s linear infinite;
+            color: $black-10;
+
+            span {
+                content: '';
+                width: 6px;
+                height: 6px;
+                margin: 0 12px;
+                background: $secondary;
+                border-radius: 5px;
+            }
+        }
+
+
+        &:hover {
+            border-top: 1px solid $secondary;
+            border-bottom: 1px solid $secondary;
+        }
+    }
+}
+
+.ham7 .top {
+    stroke-dasharray: 40 82;
+}
+
+.ham7 .middle {
+    stroke-dasharray: 40 111;
+}
+
+.ham7 .bottom {
+    stroke-dasharray: 40 161;
+}
+
+.ham7.active .top {
+    stroke-dasharray: 17 82;
+    stroke-dashoffset: -62px;
+}
+
+.ham7.active .middle {
+    stroke-dashoffset: 23px;
+}
+
+.ham7.active .bottom {
+    stroke-dashoffset: -83px;
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: $dark;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: $dark;
+    width: 50px;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #fff;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.button_container {
+    background: $dark;
+    display: none;
+
+    @media (max-width: 600px) {
+        display: block;
+    }
+}

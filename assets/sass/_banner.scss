@@ -1,0 +1,198 @@
+.banner {
+    padding: 200px 140px 300px;
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 1680px) {
+        padding: 180px 120px 280px;
+    }
+
+    @media (max-width: 1440px) {
+        padding: 160px 100px 200px;
+    }
+
+    @media (max-width: 1280px) {
+        padding: 150px 85px 155px;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 105px 65px 130px;
+    }
+
+    &-heading {
+        color: $white;
+    }
+
+    &-content {
+        width: 35%;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        color: $black-25;
+
+        @media (max-width: 1440px) {
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 1280px) {
+            margin-top: 15px;
+            margin-bottom: 45px;
+            width: 40%;
+        }
+
+        @media (max-width: 1024px) {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        &-wrap {
+            margin-bottom: 65px;
+        }
+    }
+
+    &.services {
+        padding-bottom: 150px;
+        background-image: none;
+        position: relative;
+
+        @media (max-width: 1440px) {
+            padding-bottom: 90px;
+        }
+
+        @media (max-width: 1024px) {
+            padding-bottom: 55px;
+        }
+    }
+
+    &.career {
+        background-image: none;
+        position: relative;
+
+        .btn-circle {
+            svg {
+                right: -50px;
+
+                @media (max-width: 1024px) {
+                    right: -35px;
+                }
+            }
+        }
+
+        .banner-content {
+            width: 90%;
+        }
+
+        .btn-wrap {
+            &:hover {
+                .main-btn {
+                    @media (max-width: 1680px) {
+                        width: 337px;
+                    }
+
+                    @media (max-width: 1440px) {
+                        width: 300px;
+                    }
+
+                    @media (max-width: 1280px) {
+                        width: 273px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        width: 205px;
+                    }
+                }
+            }
+
+            @media (max-width: 1680px) {
+                width: 337px;
+            }
+
+            @media (max-width: 1440px) {
+                width: 300px;
+            }
+
+            @media (max-width: 1280px) {
+                width: 273px;
+            }
+
+            @media (max-width: 1024px) {
+                width: 205px;
+            }
+        }
+    }
+}
+
+.img-wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    transform: rotate(-3deg);
+}
+
+.text-wrapp {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+
+    h2 {
+        background: $primary-gradient;
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+.logos {
+    width: 35%;
+
+    @media (max-width: 1680px) {
+        width: 40%;
+    }
+
+    @media (max-width: 1366px) {
+        width: 55%;
+    }
+
+    @media (max-width: 1024px) {
+        width: 65%;
+    }
+}
+
+.quote {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    h3 {
+        width: 71%;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        left: -95px;
+    }
+}
+
+.capsule {
+    width: 132px;
+    height: 330px;
+    border-radius: 80px;
+    border: 1px solid $primary;
+    transform: rotate(30deg);
+    position: relative;
+    left: 34%;
+
+    @media (max-width: 1280px) {
+        width: 125px;
+        height: 320px;
+    }
+
+    @media (max-width: 1024px) {
+        width: 115px;
+        height: 285px;
+    }
+}

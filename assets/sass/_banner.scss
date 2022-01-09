@@ -93,8 +93,12 @@
         }
 
         .btn-wrap {
+            width: 345px;
+
             &:hover {
                 .main-btn {
+                    width: 345px;
+
                     @media (max-width: 1680px) {
                         width: 337px;
                     }

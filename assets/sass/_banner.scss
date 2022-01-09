@@ -21,6 +21,10 @@
         padding: 105px 65px 130px;
     }
 
+    @media (max-width: 768px) {
+        padding: 105px 35px 130px;
+    }
+
     &-heading {
         color: $white;
     }
@@ -64,6 +68,10 @@
         @media (max-width: 1024px) {
             padding-bottom: 55px;
         }
+
+        @media (max-width: 768px) {
+            padding-top: 80px;
+        }
     }
 
     &.career {
@@ -102,6 +110,10 @@
                     @media (max-width: 1024px) {
                         width: 205px;
                     }
+
+                    @media (max-width: 768px) {
+                        width: 187px;
+                    }
                 }
             }
 
@@ -119,6 +131,14 @@
 
             @media (max-width: 1024px) {
                 width: 205px;
+            }
+
+            @media (max-width: 768px) {
+                width: 187px;
+            }
+
+            @media (max-width: 600px) {
+                width: 228px;
             }
         }
     }
@@ -159,6 +179,20 @@
     @media (max-width: 1024px) {
         width: 65%;
     }
+
+    @media (max-width: 768px) {
+        width: 50%;
+    }
+
+    @media (max-width: 600px) {
+        width: 75%;
+    }
+
+    img {
+        @media (max-width: 768px) {
+            height: 30px;
+        }
+    }
 }
 
 .quote {
@@ -174,6 +208,14 @@
         z-index: 2;
         text-align: center;
         left: -95px;
+
+        @media (max-width: 820px) {
+            left: -65px;
+        }
+
+        @media (max-width: 768px) {
+            left: -52px;
+        }
     }
 }
 
@@ -194,5 +236,15 @@
     @media (max-width: 1024px) {
         width: 115px;
         height: 285px;
+    }
+
+    @media (max-width: 768px) {
+        width: 95px;
+        height: 255px;
+    }
+
+    @media (max-width: 600px) {
+        width: 80px;
+        height: 210px;
     }
 }

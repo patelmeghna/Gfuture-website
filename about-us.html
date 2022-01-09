@@ -14,11 +14,19 @@
 
 <body>
 
+    <div class="loader-wrap">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+
     <!-- ============================ begin::navbar ============================ -->
     <nav>
         <a href="index.html"><img src="./assets/svg/logo.svg" alt="logo" class="logo"></a>
 
-        <button type="button" class="button_container">
+        <button type="button" onclick="mobileMenu()" class="button_container">
             <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
                 <path class="line top"
                     d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
@@ -31,9 +39,9 @@
         <div class="hamburger_menu">
             <div class="nav-links">
                 <ul>
-                    <li><a href="./services.html">Services</a></li>
+                    <li class=""><a href="./services.html">Services</a></li>
                     <li><a href="./team.html">Team</a></li>
-                    <li class="active"><a href="#">Company</a></li>
+                    <li class="active"><a href="./about-us.html">Company</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -64,7 +72,7 @@
         </div>
 
         <div class="about-banner text-center">
-            <div class="text-96 text-white fw-bold about-header">Generating Future</div>
+            <div class="text-96 text-white fw-bold about-header"> G<span class="writting-text"></span> Future</div>
 
             <p class="about-content text-48 text-white">
                 We believe in leading the world through change. We deliver strategies to deliver the expectations of our
@@ -122,7 +130,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-4">
                 <div class="service-box">
                     <div class="icon-box"></div>
                     <p class="text-24 service-title">We believe in your ideas</p>
@@ -132,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-4">
                 <div class="service-box">
                     <div class="icon-box"></div>
                     <p class="text-24 service-title">We’re all-in on transparency</p>
@@ -143,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-4">
                 <div class="service-box">
                     <div class="icon-box"></div>
                     <p class="text-24 service-title">We believe in your ideas</p>
@@ -189,25 +197,25 @@
             </div>
 
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="partners-logo">
                         <img src="./assets/icons/edge.svg" alt="">
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="partners-logo">
                         <img src="./assets/icons/grab.svg" alt="">
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="partners-logo">
                         <img src="./assets/icons/labs.svg" alt="">
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="partners-logo">
                         <img src="./assets/icons/blockchain.svg" alt="">
                     </div>
@@ -242,7 +250,7 @@
     <footer>
         <div class="footer-menu">
             <div class="row align-items-center">
-                <div class="col-2">
+                <div class="col-md-2 col-12">
                     <div class="footer-logo">
                         <img src="./assets/svg/logo.svg" alt="logo" width="140px">
                     </div>
@@ -250,25 +258,25 @@
 
                 <div class="col-6">
                     <div class="row">
-                        <div class="col-md-3 text-center">
-                            <a href="#" class="footer-link">Services</a>
+                        <div class="col-md-3 col-6 text-center">
+                            <a href="./services.html" class="footer-link">Services</a>
                         </div>
 
-                        <div class="col-md-3 text-center">
-                            <a href="#" class="footer-link">Clients</a>
+                        <div class="col-md-3 col-6 text-center">
+                            <a href="./team.html" class="footer-link">Team</a>
                         </div>
 
-                        <div class="col-md-3 text-center">
-                            <a href="#" class="footer-link">Company</a>
+                        <div class="col-md-3 col-6 text-center">
+                            <a href="./about-us.html" class="footer-link">Company</a>
                         </div>
 
-                        <div class="col-md-3 text-center">
-                            <a href="#" class="footer-link">Contact</a>
+                        <div class="col-md-3 col-6 text-center">
+                            <a href="./contact.html" class="footer-link">Contact</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-md-4 col-6">
                     <div class="row justify-content-end">
                         <div class="col-md-auto">
                             <a href="mailto:Contact@gfuturetech.com" class="footer-link float-end"><i
@@ -288,7 +296,7 @@
             <div class="footer-separator"></div>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 copyright">
                     <div class="row">
                         <div class="col-auto">
                             <p>© gfuturetech - 2022</p>
@@ -304,7 +312,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 text-right">
+                <div class="col-md-6 text-right social">
                     <div class="d-flex justify-content-end">
                         <a href="#" class="social-wrap"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-wrap"><i class="fab fa-instagram"></i></a>
@@ -317,6 +325,8 @@
 
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

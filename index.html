@@ -14,11 +14,19 @@
 
 <body>
 
+    <div class="loader-wrap">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+
     <!-- ============================ begin::navbar ============================ -->
     <nav>
         <a href="index.html"><img src="./assets/svg/logo.svg" alt="logo" class="logo"></a>
 
-        <button type="button" class="button_container">
+        <button type="button" onclick="mobileMenu()" class="button_container">
             <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
                 <path class="line top"
                     d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
@@ -72,7 +80,7 @@
             <div class="btn-wrap">
                 <button class="main-btn"> </button>
                 <button class="btn-circle text-24">
-                    Estimate your project
+                    Get In Touch
                     <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 7.5H21M21 7.5L14.7615 1M21 7.5L14.7615 14" stroke="white" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" />
@@ -83,19 +91,19 @@
 
         <div class="logos">
             <div class="row gy-5">
-                <div class="col-md-6">
+                <div class="col-6">
                     <img src="./assets/svg/eth.svg" alt="">
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-6">
                     <img src="./assets/svg/hype.svg" alt="">
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-6">
                     <img src="./assets/svg/pol.svg" alt="">
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-6">
                     <img src="./assets/svg/SM.svg" alt="">
                 </div>
             </div>
@@ -104,7 +112,7 @@
     <!-- ============================ end::banner ============================ -->
 
     <!-- ============================ begin::quote ============================ -->
-    <section class="quote">
+    <section class="quote reveal">
         <div class="capsule"></div>
         <h3 class="text-48">We help fast-growing startups and enterprises build automated, self-healing, scalable
             products using our Full-Stack Engineered, Design and R&D Team</h3>
@@ -112,11 +120,11 @@
     <!-- ============================ end::quote ============================ -->
 
     <!-- ============================ begin::services ============================ -->
-    <section class="services">
+    <section class="services reveal">
         <h1 class="bordered-heading">WHAT WE OFFER</h1>
 
         <div class="row gx-5 gy-5">
-            <div class="col-md-4">
+            <div class="col-md-4 col-6">
                 <div class="service-box">
                     <h4 class="text-48 title">Future proof
                         engineering &
@@ -126,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-6">
                 <div class="service-box">
                     <div class="icon-box">
                         <svg width="52" height="58" viewBox="0 0 52 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,12 +144,12 @@
                         </svg>
                     </div>
                     <p class="text-24 service-title">Smart Contract</p>
-                    <p class="text-18 desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eros
-                        pellentesque non massa ut libero egestas vulputate semper</p>
+                    <p class="text-18 desc">Established robust smart contracts,Dapps,digital tokens with state of the
+                        art solidity standard development services</p>
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-6">
                 <div class="service-box">
                     <div class="icon-box">
                         <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,12 +159,13 @@
                         </svg>
                     </div>
                     <p class="text-24 service-title">DeFi</p>
-                    <p class="text-18 desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eros
-                        pellentesque non massa ut libero egestas vulputate semper</p>
+                    <p class="text-18 desc">Providing services on trending DeFi protocols to rake in the benefit
+                        provided by the decentralized finance industry with automatic swaps, over- collateralization and
+                        higher liquidity maker engines</p>
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-6">
                 <div class="service-box">
                     <div class="icon-box">
                         <svg width="66" height="58" viewBox="0 0 66 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,12 +181,13 @@
                         </svg>
                     </div>
                     <p class="text-24 service-title">DAO</p>
-                    <p class="text-18 desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eros
-                        pellentesque non massa ut libero egestas vulputate semper</p>
+                    <p class="text-18 desc">A “DAO” is a decentralized autonomous organization— which uses an admittedly
+                        clunky acronym to represent a formalized community that can self-govern and take on some aspects
+                        of a company</p>
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-6">
                 <div class="service-box">
                     <div class="icon-box">
                         <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -243,7 +253,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-6">
                 <div class="service-box">
                     <div class="icon-box">
                         <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,8 +284,8 @@
                         </svg>
                     </div>
                     <p class="text-24 service-title">Exchange</p>
-                    <p class="text-18 desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eros
-                        pellentesque non massa ut libero egestas vulputate semper</p>
+                    <p class="text-18 desc">Highly secured AMM, centralized and Decentralized exchange(DEX) with
+                        lighting fast order matching engine</p>
                 </div>
             </div>
         </div>
@@ -283,7 +293,7 @@
     <!-- ============================ end::services ============================ -->
 
     <!-- ============================ begin::implementation ============================ -->
-    <section class="implementation">
+    <section class="implementation reveal">
         <div class="text-center">
             <h1 class="bordered-heading">FUTURE PROOF</h1>
             <p class="text-48 title">Current Trending Implementation</p>
@@ -292,9 +302,11 @@
         <div class="row gy-5 implement-wrap align-items-center">
             <div class="col-md-5">
                 <p class="text-72">NFT’S</p>
-                <p class="text-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eros pellentesque
-                    non massa ut libero egestas vulputate semper Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Pulvinar eros pellentesque non massa ut libero egestas vulputate semper</p>
+                <p class="text-24">NFTs are basically digital containers which can hold IP but which liberated it to be
+                    owned and traded so creators have a world of new ways to produce, distribute, remix and monetize
+                    content. The most important concept in NFTs is that, after decades of infinitely sharing creative
+                    output on the Internet, we finally have digital scarcity. That means that we can finally prove that
+                    a particular file or piece of content or piece of data is uniquely owned by a single person.</p>
             </div>
 
             <div class="col-md-7">
@@ -302,7 +314,9 @@
                     <img src="./assets/images/1.png" alt="">
                 </div>
             </div>
+        </div>
 
+        <div class="row gy-5 implement-wrap align-items-center">
             <div class="col-md-7">
                 <div class="img-wrap float-start">
                     <img src="./assets/images/metaverse.png" alt="">
@@ -311,16 +325,16 @@
 
             <div class="col-md-5">
                 <p class="text-72">Metaverse</p>
-                <p class="text-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eros pellentesque
-                    non massa ut libero egestas vulputate semper Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Pulvinar eros pellentesque non massa ut libero egestas vulputate semper</p>
+                <p class="text-24">Unlock in-person avatars in a virtual world with limitless possibilities and story
+                    themes. The next gamification and entertainment medium of future is digital.</p>
             </div>
+        </div>
 
+        <div class="row gy-5 implement-wrap align-items-center">
             <div class="col-md-5">
                 <p class="text-72">MultiChain</p>
-                <p class="text-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eros pellentesque
-                    non massa ut libero egestas vulputate semper Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Pulvinar eros pellentesque non massa ut libero egestas vulputate semper</p>
+                <p class="text-24">Multichain is the way to for your crypto project future, increase you community reach
+                    and adoption in multiple blockchains. The next step of decentralised finance is multichain</p>
             </div>
 
             <div class="col-md-7">
@@ -333,7 +347,7 @@
     <!-- ============================ end::implementation ============================ -->
 
     <!-- ============================ begin::footer top ============================ -->
-    <section class="footer">
+    <section class="footer reveal">
         <div class="infinite-loop">
             <p class="infinite-footer-text">Advanced and reliable technology solutions from the experts! <span
                     class="infinite-devider"></span>
@@ -365,25 +379,25 @@
             </div>
 
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="partners-logo">
                         <img src="./assets/icons/edge.svg" alt="">
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="partners-logo">
                         <img src="./assets/icons/grab.svg" alt="">
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="partners-logo">
                         <img src="./assets/icons/labs.svg" alt="">
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="partners-logo">
                         <img src="./assets/icons/blockchain.svg" alt="">
                     </div>
@@ -391,7 +405,7 @@
             </div>
         </div>
 
-        <div class="experience">
+        <div class="experience reveal">
             <div class="experience-banner">
                 <h2 class="experience-text text-64 text-white fw-bold">Experience our services in all
                     Directions of the Globe</h2>
@@ -418,7 +432,7 @@
     <footer>
         <div class="footer-menu">
             <div class="row align-items-center">
-                <div class="col-2">
+                <div class="col-md-2 col-12">
                     <div class="footer-logo">
                         <img src="./assets/svg/logo.svg" alt="logo" width="140px">
                     </div>
@@ -426,25 +440,25 @@
 
                 <div class="col-6">
                     <div class="row">
-                        <div class="col-md-3 text-center">
+                        <div class="col-md-3 col-6 text-center">
                             <a href="./services.html" class="footer-link">Services</a>
                         </div>
 
-                        <div class="col-md-3 text-center">
+                        <div class="col-md-3 col-6 text-center">
                             <a href="./team.html" class="footer-link">Team</a>
                         </div>
 
-                        <div class="col-md-3 text-center">
+                        <div class="col-md-3 col-6 text-center">
                             <a href="./about-us.html" class="footer-link">Company</a>
                         </div>
 
-                        <div class="col-md-3 text-center">
+                        <div class="col-md-3 col-6 text-center">
                             <a href="./contact.html" class="footer-link">Contact</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-md-4 col-6">
                     <div class="row justify-content-end">
                         <div class="col-md-auto">
                             <a href="mailto:Contact@gfuturetech.com" class="footer-link float-end"><i
@@ -464,7 +478,7 @@
             <div class="footer-separator"></div>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 copyright">
                     <div class="row">
                         <div class="col-auto">
                             <p>© gfuturetech - 2022</p>
@@ -480,7 +494,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 text-right">
+                <div class="col-md-6 text-right social">
                     <div class="d-flex justify-content-end">
                         <a href="#" class="social-wrap"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-wrap"><i class="fab fa-instagram"></i></a>
@@ -493,6 +507,8 @@
 
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

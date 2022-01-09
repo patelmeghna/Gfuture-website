@@ -58,14 +58,21 @@
 
 .copyright {
   .row {
-    justify-content: center;
+    @media (max-width: 600px) {
+      justify-content: center;
+
+    }
   }
 }
 
 .social {
   .justify-content-end {
-    justify-content: center !important;
-    margin-top: 30px;
+
+
+    @media (max-width: 600px) {
+      justify-content: center !important;
+      margin-top: 30px;
+    }
   }
 }
 
@@ -225,6 +232,7 @@
   top: -80px;
   right: 20%;
   z-index: 9;
+
   @media (max-width: 820px) {
     top: -65px;
     right: 5%;

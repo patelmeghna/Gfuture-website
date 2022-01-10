@@ -19,22 +19,22 @@ body {
   scroll-behavior: smooth;
 
   @media (max-width: 1680px) {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
 
   @media (max-width: 1440px) {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 21px;
   }
 
   @media (max-width: 1280px) {
-    font-size: 11px;
+    font-size: 14px;
     line-height: 18px;
   }
 
   @media (max-width: 820px) {
-    font-size: 9px;
+    font-size: 12px;
     line-height: 14px;
   }
 }
@@ -199,7 +199,7 @@ ol {
 
 .text-48 {
   font-size: 48px;
-  line-height: 60px;
+  line-height: 48px;
 
   &.title {
     font-weight: 600;
@@ -332,25 +332,25 @@ ol {
     }
 
     @media (max-width: 1440px) {
-      width: 305px;
+      width: 230px;
     }
 
     @media (max-width: 1280px) {
-      width: 275px;
+      width: 214px;
       height: 72px;
     }
 
     @media (max-width: 1024px) {
-      width: 210px;
+      width: 151px;
       height: 55px;
     }
 
     @media (max-width: 768px) {
-      width: 193px;
+      width: 153px;
     }
 
     @media (max-width: 600px) {
-      width: 235px;
+      width: 179px;
     }
 
     .main-btn {
@@ -389,25 +389,25 @@ ol {
         }
 
         @media (max-width: 1440px) {
-          width: 305px;
+          width: 230px;
         }
 
         @media (max-width: 1280px) {
-          width: 275px;
+          width: 214px;
           height: 72px;
         }
 
         @media (max-width: 1024px) {
-          width: 210px;
+          width: 151px;
           height: 55px;
         }
 
         @media (max-width: 768px) {
-          width: 193px;
+          width: 153px;
         }
 
         @media (max-width: 600px) {
-          width: 235px;
+          width: 179px;
         }
       }
 
@@ -429,6 +429,13 @@ ol {
 
     @media (max-width: 1024px) {
       left: -10px;
+    }
+
+    &.text-24 {
+      @media (max-width: 1024px) {
+        font-size: 16px;
+        line-height: 15px;
+      }
     }
 
     svg {

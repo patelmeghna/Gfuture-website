@@ -10,7 +10,7 @@
     }
 
     @media (max-width: 1680px) {
-      font-size: 13px;
+      font-size: 18px;
     }
 
     @media (max-width: 600px) {
@@ -326,6 +326,13 @@
   padding: 121px 140px 183px;
   position: relative;
   background: $black;
+
+  .main-btn {
+    @media (max-width: 1440px) {
+      width: 45px;
+      height: 45px;
+    }
+  }
 
   @media (max-width: 1680px) {
     padding: 120px 120px 180px;

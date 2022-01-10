@@ -166,6 +166,14 @@
     font-weight: 700;
     transition: .3s ease-in-out;
 
+    @media (max-width: 1280px) {
+        padding: 10px 60px;
+    }
+
+    @media (max-width: 1280px) {
+        padding: 10px 30px;
+    }
+
     &:hover {
         background: $secondary;
     }

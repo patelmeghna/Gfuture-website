@@ -12778,6 +12778,11 @@ nav {
     font-size: 18px;
   }
 }
+@media (max-width: 768px) {
+  .footer-link {
+    font-size: 14px;
+  }
+}
 @media (max-width: 600px) {
   .footer-link {
     padding-top: 10px;
@@ -14507,6 +14512,16 @@ footer {
   line-height: 36px;
   font-weight: 700;
   transition: 0.3s ease-in-out;
+}
+@media (max-width: 1280px) {
+  .submit-btn {
+    padding: 10px 60px;
+  }
+}
+@media (max-width: 1280px) {
+  .submit-btn {
+    padding: 10px 30px;
+  }
 }
 .submit-btn:hover {
   background: #38E8DE;

@@ -29,6 +29,19 @@
         color: $white;
     }
 
+    &.public-sector {
+        background-image: url(../images/public.png);
+        margin-top: 131px;
+
+        @media (max-width: 1280px) {
+            margin-top: 123px;
+        }
+
+        @media (max-width: 1024px) {
+            margin-top: 66px;
+        }
+    }
+
     &-content {
         width: 35%;
         margin-top: 30px;

@@ -11494,6 +11494,52 @@ ol {
   width: 255px;
   height: 80px;
 }
+.btn-wrap.consult-btn {
+  width: 303px;
+}
+@media (max-width: 1440px) {
+  .btn-wrap.consult-btn {
+    width: 270px;
+  }
+}
+@media (max-width: 1366px) {
+  .btn-wrap.consult-btn {
+    width: 255px;
+  }
+}
+@media (max-width: 1280px) {
+  .btn-wrap.consult-btn {
+    width: 245px;
+  }
+}
+@media (max-width: 1024px) {
+  .btn-wrap.consult-btn {
+    width: 217px;
+  }
+}
+.btn-wrap.consult-btn:hover .main-btn {
+  width: 303px;
+}
+@media (max-width: 1440px) {
+  .btn-wrap.consult-btn:hover .main-btn {
+    width: 270px;
+  }
+}
+@media (max-width: 1366px) {
+  .btn-wrap.consult-btn:hover .main-btn {
+    width: 255px;
+  }
+}
+@media (max-width: 1280px) {
+  .btn-wrap.consult-btn:hover .main-btn {
+    width: 245px;
+  }
+}
+@media (max-width: 1024px) {
+  .btn-wrap.consult-btn:hover .main-btn {
+    width: 217px;
+  }
+}
 @media (max-width: 1680px) {
   .btn-wrap {
     width: 255px;
@@ -11689,6 +11735,7 @@ nav {
   position: absolute;
   width: 100%;
   z-index: 999;
+  top: 0;
 }
 @media (max-width: 1680px) {
   nav {
@@ -11797,6 +11844,11 @@ nav {
   left: 50%;
   transform: translateX(-50%);
 }
+@media (max-width: 600px) {
+  .nav-links ul li.active::before {
+    content: none;
+  }
+}
 .nav-links ul li.active:hover::before {
   animation: none;
   background: #38E8DE;
@@ -11830,6 +11882,12 @@ nav {
   overflow: hidden;
   white-space: nowrap;
   width: 200px;
+}
+@media (max-width: 1280px) {
+  .nav-btn {
+    width: 170px;
+    font-size: 13px;
+  }
 }
 @media (max-width: 1024px) {
   .nav-btn {
@@ -11923,6 +11981,81 @@ nav {
   }
 }
 
+.submenu {
+  position: relative;
+}
+.submenu.active {
+  color: #38E8DE;
+}
+.submenu:hover .sub-wrap {
+  display: block;
+}
+@media (max-width: 600px) {
+  .submenu .menu-title {
+    display: none;
+  }
+}
+.submenu .sub-wrap {
+  position: absolute;
+  top: 0px;
+  left: -25px;
+  padding: 1px;
+  border-radius: 10px;
+  background: linear-gradient(106.97deg, #386AE7 0%, #38E8DE 100%);
+  overflow: hidden;
+  display: none;
+  margin-top: 25px;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 600px) {
+  .submenu .sub-wrap {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    margin: 0;
+    padding: 0;
+    background: none;
+    display: block;
+  }
+}
+.submenu .sublinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: left;
+  padding: 23px 40px 23px 23px;
+  background: #131517;
+}
+@media (max-width: 600px) {
+  .submenu .sublinks {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+}
+.submenu .sublinks .sub-item {
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 600px) {
+  .submenu .sublinks .sub-item {
+    margin-bottom: 0;
+  }
+}
+.submenu .sublinks .sub-item a {
+  color: #CDD1DD;
+}
+.submenu .sublinks .sub-item.active a {
+  color: #38E8DE;
+}
+.submenu .sublinks .sub-item:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 600px) {
   .hamburger_menu {
     position: fixed;
@@ -11965,7 +12098,19 @@ nav {
     animation-delay: 0.55s;
   }
   .hamburger_menu.open li:nth-of-type(4) {
+    animation-delay: 1.25s;
+  }
+  .hamburger_menu.open li.submenu .sub-wrap .sublinks .sub-item {
+    animation: fadeInRight 0.5s ease forwards;
+  }
+  .hamburger_menu.open li.submenu .sub-wrap .sublinks .sub-item:nth-of-type(1) {
     animation-delay: 0.65s;
+  }
+  .hamburger_menu.open li.submenu .sub-wrap .sublinks .sub-item:nth-of-type(2) {
+    animation-delay: 1.05s;
+  }
+  .hamburger_menu.open li.submenu .sub-wrap .sublinks .sub-item:nth-of-type(3) {
+    animation-delay: 1.15s;
   }
   .hamburger_menu .nav-links {
     position: relative;
@@ -12101,6 +12246,20 @@ nav {
 }
 .banner-heading {
   color: #fff;
+}
+.banner.public-sector {
+  background-image: url(../images/public.png);
+  margin-top: 131px;
+}
+@media (max-width: 1280px) {
+  .banner.public-sector {
+    margin-top: 123px;
+  }
+}
+@media (max-width: 1024px) {
+  .banner.public-sector {
+    margin-top: 66px;
+  }
 }
 .banner-content {
   width: 35%;
@@ -12384,6 +12543,9 @@ nav {
   left: 3%;
   top: 10%;
 }
+.services .bordered-heading.public {
+  top: -3%;
+}
 @media (max-width: 1600px) {
   .services .bordered-heading {
     top: 12%;
@@ -12616,6 +12778,10 @@ nav {
   .service-content {
     width: 100%;
   }
+}
+
+.public-heading {
+  margin: 27px 0;
 }
 
 .implementation {

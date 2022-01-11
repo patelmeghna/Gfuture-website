@@ -6,6 +6,7 @@ nav {
     position: absolute;
     width: 100%;
     z-index: 999;
+    top: 0;
 
     @media (max-width: 1680px) {
         padding: 25px 120px;
@@ -109,6 +110,10 @@ nav {
                         content: '';
                         left: 50%;
                         transform: translateX(-50%);
+
+                        @media (max-width: 600px) {
+                            content: none;
+                        }
                     }
 
                     &:hover {
@@ -156,6 +161,11 @@ nav {
         overflow: hidden;
         white-space: nowrap;
         width: 200px;
+
+        @media (max-width: 1280px) {
+            width: 170px;
+            font-size: 13px;
+        }
 
         @media (max-width: 1024px) {
             padding: 8px 15px;
@@ -251,6 +261,92 @@ nav {
     }
 }
 
+.submenu {
+    position: relative;
+
+    &.active {
+        color: $secondary;
+    }
+
+    &:hover {
+        .sub-wrap {
+            display: block;
+        }
+    }
+
+    .menu-title {
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+
+    .sub-wrap {
+        position: absolute;
+        top: 0px;
+        left: -25px;
+        padding: 1px;
+        border-radius: 10px;
+        background: $primary-gradient;
+        overflow: hidden;
+        display: none;
+        margin-top: 25px;
+        transition: .3s ease-in-out;
+
+        @media (max-width: 600px) {
+            position: relative;
+            top: inherit;
+            left: inherit;
+            margin: 0;
+            padding: 0;
+            background: none;
+            display: block;
+        }
+    }
+
+    .sublinks {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        border-radius: 10px;
+        text-align: left;
+        padding: 23px 40px 23px 23px;
+        background: $dark;
+
+        @media (max-width: 600px) {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: none;
+        }
+
+        .sub-item {
+            margin-bottom: 20px;
+            margin-left: 0;
+            margin-right: 0;
+
+            @media (max-width: 600px) {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: $black-10;
+            }
+
+            &.active {
+                a {
+                    color: $secondary;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 // mobile menu
 @media (max-width: 600px) {
     .hamburger_menu {
@@ -298,7 +394,29 @@ nav {
                 }
 
                 &:nth-of-type(4) {
-                    animation-delay: .65s;
+                    animation-delay: 1.25s;
+                }
+
+                &.submenu {
+                    .sub-wrap {
+                        .sublinks {
+                            .sub-item {
+                                animation: fadeInRight .5s ease forwards;
+
+                                &:nth-of-type(1) {
+                                    animation-delay: 0.65s;
+                                }
+
+                                &:nth-of-type(2) {
+                                    animation-delay: 1.05s;
+                                }
+
+                                &:nth-of-type(3) {
+                                    animation-delay: 1.15s;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

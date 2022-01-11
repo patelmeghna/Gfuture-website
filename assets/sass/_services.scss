@@ -38,6 +38,10 @@
         left: 3%;
         top: 10%;
 
+        &.public {
+            top: -3%;
+        }
+
         @media (max-width: 1600px) {
             top: 12%;
             left: 4%;
@@ -256,4 +260,8 @@
     @media (max-width: 820px) {
         width: 100%;
     }
+}
+
+.public-heading {
+    margin: 27px 0;
 }

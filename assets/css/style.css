@@ -11969,7 +11969,7 @@ nav {
     transition: all 0.35s ease;
   }
   .hamburger_menu.open {
-    opacity: 0.9;
+    opacity: 1;
     visibility: visible;
     height: 100%;
   }

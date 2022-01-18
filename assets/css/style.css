@@ -14702,4 +14702,97 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.content-wrap {
+  padding: 180px 100px 168px;
+}
+@media (max-width: 1440px) {
+  .content-wrap {
+    padding: 150px 100px 148px;
+  }
+}
+@media (max-width: 1024px) {
+  .content-wrap {
+    padding: 100px 60px 90px;
+  }
+}
+@media (max-width: 600px) {
+  .content-wrap {
+    padding: 90px 35px 70px;
+  }
+}
+.content-text {
+  padding-top: 80px;
+}
+@media (max-width: 1440px) {
+  .content-text {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 1024px) {
+  .content-text {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .content-text {
+    padding-top: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .content-text {
+    padding-top: 75px;
+  }
+}
+
+.text-wrap {
+  color: #9DA1AC;
+  font-weight: 300;
+  margin: 40px 0 35px;
+}
+@media (max-width: 1440px) {
+  .text-wrap {
+    margin: 35px 0 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .text-wrap {
+    margin: 25px 0 20px;
+  }
+}
+@media (max-width: 800px) {
+  .text-wrap {
+    margin: 20px 0 15px;
+  }
+}
+
+.policy-list {
+  margin-top: 50px;
+  padding-left: 25px;
+}
+@media (max-width: 1440px) {
+  .policy-list {
+    padding-left: 25px;
+  }
+}
+@media (max-width: 1024px) {
+  .policy-list {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .policy-list {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .policy-list {
+    padding-left: 20px;
+  }
+}
+.policy-list li {
+  color: #9DA1AC;
+  font-weight: 300;
+  list-style: square;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -95,6 +95,24 @@
         .btn-wrap {
             width: 345px;
 
+            &.position {
+                @media (max-width: 1366px) {
+                    width: 283px;
+                }
+
+                @media (max-width: 1280px) {
+                    width: 278px;
+                }
+
+                @media (max-width: 1024px) {
+                    width: 238px;
+                }
+
+                @media (max-width: 768px) {
+                    width: 236px;
+                }
+            }
+
             &:hover {
                 .main-btn {
                     width: 345px;

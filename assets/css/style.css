@@ -11698,6 +11698,14 @@ ol {
   }
 }
 
+.edge-logo {
+  width: 230px;
+}
+
+.block-logo {
+  width: 330px;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -12189,6 +12197,26 @@ nav {
 }
 .banner.career .btn-wrap {
   width: 345px;
+}
+@media (max-width: 1366px) {
+  .banner.career .btn-wrap.position {
+    width: 283px;
+  }
+}
+@media (max-width: 1280px) {
+  .banner.career .btn-wrap.position {
+    width: 278px;
+  }
+}
+@media (max-width: 1024px) {
+  .banner.career .btn-wrap.position {
+    width: 238px;
+  }
+}
+@media (max-width: 768px) {
+  .banner.career .btn-wrap.position {
+    width: 236px;
+  }
 }
 .banner.career .btn-wrap:hover .main-btn {
   width: 345px;

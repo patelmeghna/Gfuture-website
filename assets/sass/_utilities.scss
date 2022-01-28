@@ -360,9 +360,13 @@ ol {
       height: 55px;
     }
 
-    @media (max-width: 768px) {
-      width: 153px;
+    @media (max-width: 820px) {
+      width: 183px;
     }
+
+    // @media (max-width: 768px) {
+    //   width: 153px;
+    // }
 
     @media (max-width: 600px) {
       width: 179px;
@@ -518,6 +522,10 @@ ol {
 
 .edge-logo {
   width: 230px;
+
+  @media (max-width: 600px) {
+    width: 100px;
+  }
 }
 
 .block-logo {

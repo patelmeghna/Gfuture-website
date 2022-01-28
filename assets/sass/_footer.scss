@@ -487,6 +487,10 @@
     right: 5%;
   }
 
+  @media (max-width: 600px) {
+    display: none;
+  }
+
   img {
     @media (max-width: 1680px) {
       height: 550px;

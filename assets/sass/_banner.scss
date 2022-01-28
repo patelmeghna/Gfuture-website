@@ -5,6 +5,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    &-video {
+        background-image: none;
+
+        .banner-content {
+            width: 85%;
+        }
+    }
+
     @media (max-width: 1680px) {
         padding: 180px 120px 280px;
     }

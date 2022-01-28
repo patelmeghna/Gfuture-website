@@ -11711,6 +11711,10 @@ ol {
   width: 330px;
 }
 
+.home-2 {
+  background-color: #111011;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -12108,6 +12112,12 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.banner-video {
+  background-image: none;
+}
+.banner-video .banner-content {
+  width: 85%;
 }
 @media (max-width: 1680px) {
   .banner {
@@ -13753,6 +13763,7 @@ footer {
   top: 200px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 0;
 }
 @media (max-width: 1440px) {
   .circle {
@@ -13788,6 +13799,8 @@ footer {
   padding: 0 35px;
   margin-top: 50px;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 1600px) {
   .member {

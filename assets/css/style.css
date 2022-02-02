@@ -14099,6 +14099,10 @@ footer {
   }
 }
 
+.scale-img {
+  transform: scale(1.07);
+}
+
 .team-form {
   padding: 80px 75px;
   background: #262D3D;
@@ -14311,6 +14315,10 @@ footer {
 }
 .work-option .technology-icon {
   margin-right: 10px;
+}
+.work-option .technology-icon svg {
+  width: 25px;
+  height: 25px;
 }
 
 .contact-banner {
@@ -14622,7 +14630,7 @@ footer {
   }
 }
 .input-area {
-  padding: 22px 20px;
+  padding: 16px 14px;
   background: #3B414F;
   border-radius: 5px;
   color: #fff;
@@ -14699,13 +14707,13 @@ footer {
 
 .submit-btn {
   background: #386AE7;
-  padding: 16px 75px;
+  padding: 10px 70px;
   border: none;
   border-radius: 5px;
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: 500;
   transition: 0.3s ease-in-out;
 }
 @media (max-width: 1280px) {
@@ -14724,6 +14732,13 @@ footer {
     font-weight: 600;
     line-height: 20px;
   }
+}
+.submit-btn.reset {
+  background: #323846;
+  color: #9DA1AC;
+}
+.submit-btn.reset:hover {
+  background: #3B414F;
 }
 .submit-btn:hover {
   background: #38E8DE;
@@ -14849,6 +14864,92 @@ input[type=number] {
   color: #9DA1AC;
   font-weight: 300;
   list-style: square;
+}
+
+.file-input-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #3B414F;
+  border-radius: 5px;
+}
+
+.file-input-wrapper > input[type=file] {
+  font-size: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.file_input_textbox {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  height: auto;
+  padding: 16px 14px;
+  width: 85%;
+  background: transparent;
+  border: none;
+}
+@media (max-width: 1024px) {
+  .file_input_textbox {
+    width: 75%;
+  }
+}
+@media (max-width: 820px) {
+  .file_input_textbox {
+    width: 89%;
+  }
+}
+@media (max-width: 768px) {
+  .file_input_textbox {
+    width: 85%;
+  }
+}
+@media (max-width: 600px) {
+  .file_input_textbox {
+    padding: 15px 20px;
+  }
+}
+
+.btn-file-input svg {
+  width: 28px;
+  height: 26px;
+}
+@media (max-width: 1200px) {
+  .btn-file-input svg {
+    width: 20px;
+  }
+}
+
+.file-input-wrapper > .btn-file-input {
+  display: inline-block;
+  width: auto;
+}
+
+.file-input-wrapper > .btn-file-input-hover {
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  border: 0;
+}
+.file-input-wrapper > .btn-file-input-hover svg {
+  width: 28px;
+  height: 26px;
+}
+@media (max-width: 1200px) {
+  .file-input-wrapper > .btn-file-input-hover svg {
+    width: 20px;
+  }
+}
+
+.small-text {
+  color: #CDD1DD;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */

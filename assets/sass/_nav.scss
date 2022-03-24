@@ -29,21 +29,13 @@ nav {
 }
 
 .hamburger_menu {
-    width: 80%;
+    width: 87%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 1680px) {
-        width: 82%;
-    }
-
     @media (max-width: 1366px) {
-        width: 77%;
-    }
-
-    @media (max-width: 1024px) {
-        width: 80%;
+        width: 85%;
     }
 
     @media (max-width: 600px) {

@@ -49,7 +49,7 @@
                     <li><a href="./about-us.html">About</a></li>
                     <li><a href="./team.html">Team</a></li>
                     <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./career.html">Career</a></li>
+                    <li><li><a href="./career.html">Career</a></li></li>
                     <li class="active"><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -121,41 +121,41 @@
 
             <div class="col-md-12 col-lg-7">
                 <div class="form-area">
-                    <form action="">
+                    <form id="contactForm" method="post">
                         <div class="row">
                             <div class="col-md-6">
                                 <label class="input-label">Full name</label>
-                                <input type="text" class="input-area" name="full-name" placeholder="John Doe">
+                                <input type="text" id="name" class="input-area" name="name" placeholder="John Doe">
                             </div>
 
                             <div class="col-md-6">
                                 <label class="input-label">Company name</label>
-                                <input type="text" class="input-area" name="company-name" placeholder="Earth Inc">
+                                <input type="text" id="companyName" class="input-area" name="companyName" placeholder="Earth Inc">
                             </div>
 
                             <div class="col-md-6">
                                 <label class="input-label">Email Address</label>
-                                <input type="email" class="input-area" name="full-name"
+                                <input type="email" id="email" class="input-area" name="email"
                                     placeholder="you@yourcompany.com">
                             </div>
 
                             <div class="col-md-6">
                                 <label class="input-label">Phone no</label>
-                                <input type="number" class="input-area" name="company-name" placeholder="***** *****">
+                                <input type="number" id="phoneNo" class="input-area" name="phoneNo" placeholder="***** *****">
                             </div>
 
                             <div class="col-md-12 col-12">
                                 <label class="input-label">Project Budget</label>
                                 <div class="row">
                                     <div class="col-md-6 col-4">
-                                        <select name="currency" id="currency" class="input-area">
+                                        <select name="budgetCurrency" id="budgetCurrency" class="input-area">
                                             <option value="GBP">£ - GBP</option>
                                             <option value="USD">$ - USD</option>
                                         </select>
                                     </div>
 
                                     <div class="col-md-6 col-8">
-                                        <input type="number" class="input-area" name="company-name"
+                                        <input type="number" id="amount" class="input-area" name="amount"
                                             placeholder="Amount">
                                     </div>
                                 </div>
@@ -163,12 +163,12 @@
 
                             <div class="col-md-12">
                                 <label class="input-label">Project Description</label>
-                                <textarea rows="6" class="input-area"
+                                <textarea rows="6" class="input-area" id="description" name="description"
                                     placeholder="Type your detailed description here."></textarea>
                             </div>
 
                             <div class="col-md-4 col-4">
-                                <button class="submit-btn">Send</button>
+                                <button type="submit" class="submit-btn">Send</button>
                             </div>
                             <div class="col-md-8 col-8">
                                 <p class="message">We will get back to shortly.</p>
@@ -273,6 +273,57 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        var form=document.getElementById('contactForm')
+        
+        form.addEventListener('submit', function(e){
+         e.preventDefault()
+        
+         var name=document.getElementById('name').value
+         var companyName=document.getElementById('companyName').value
+         var email=document.getElementById('email').value
+         var phoneNo=document.getElementById('phoneNo').value
+         var budgetCurrency=document.getElementById('budgetCurrency').value
+         var amount=document.getElementById('amount').value
+         var description=document.getElementById('description').value
+        
+         fetch('https://api.gfuturetech.com/api/contact/gfuturetechContact', {
+          method: 'POST',
+          body: JSON.stringify({
+            name:name,
+            companyName:companyName,
+            email:email,
+            phoneNo:phoneNo,
+            budgetCurrency:budgetCurrency,
+            amount:amount,
+            description:description,
+        
+          }),
+          headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+          }
+          })
+          .then(function(response){ 
+            console.log(response)
+          return response.json()})
+          .then(function(data)
+          {console.log(data)
+        //   name=document.getElementById("name")
+        //   body=document.getElementById("bd")
+        //   name.innerHTML = data.name
+        //   body.innerHTML = data.body  
+            Swal.fire({
+                title: 'Thank You',
+                text: data.message,
+                icon: 'success',
+                showConfirmButton: false,
+            })
+        })
+          .catch(error => console.error('Error:', error)); 
+        });
+        </script>
 </body>
 
 </html>
